@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> contatos- barbearia lucas </title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="logo.png" alt="logo barbearia lucas"></h1>
+				
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contatos.html">Contatos</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<form class="contatos">
+				<label for="nome e sobrenome">nome sobrenome</label>
+				<input type="text" id="nome e sobrenome" class="imput-padrao" required>
+
+				<label for="email">email</label>
+				<input type="text" id="email" class="imput-padrao" required placeholder="seu email.com">
+
+				<label for="telefone">telefone</label>
+				<input type="text" id="telefone" class="imput-padrao " required placeholder="(xx) xxxxx-xxxx">
+
+				<label for="mensagem">mensagem</label>
+				<textarea cols="30" rows="10" id="mensagem" class="imput-padrao" ></textarea>
+				
+				<fieldset>
+					<legend>como prefere ser contatado?</legend>
+					<label for="radio-email"><input type="radio" name="contato" value="email"id="radio-email">email</label>
+			
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">telefone</label>
+				
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>whatsapp</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>qual o horario prefere ser atendido?</legend>
+					<select>
+					<option>manhã</option>
+					<option>tarde</option>
+					<option>noite</option>
+					</select>
+				</fieldset>
+
+				<label><input type="checkbox" checked>gostaria de receber nosso email? </label>
+				<input type= "submit" value="enviar formulario" class="enviar">
+			</form>
+
+		</main>
+		<footer>
+			<img src="logo-branco.png" alt="logo barbearia lucas" >
+			<p class="copyright"> &copy;copyright barbearia lucas - 2022</p>
+		</footer>
